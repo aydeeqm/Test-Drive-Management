@@ -3,7 +3,7 @@ import { NavLink, Redirect } from 'react-router-dom';
 import { connect } from 'redux-zero/react';
 //import Footer from './Footer';
 import { signIn} from './actions';
-//import './css/body.css';
+import './Login.css';
 
 const InitPage = ({ successLogin }) => {
     return (
@@ -12,8 +12,8 @@ const InitPage = ({ successLogin }) => {
                 successLogin && <Redirect to="/boards" />
             }
             <main>
-                <header>
-                    <div className='logo'></div>
+                <header className="barEstado bgAzulPantone">
+                    <div className='logo'><img alt="logoebiz" src="" /></div>
                 </header>
                 <form id='sign_in_form' onSubmit={
                     e => {
@@ -21,7 +21,7 @@ const InitPage = ({ successLogin }) => {
                         signIn(this.emailInputRef.value, this.passwordInputRef.value)
                     }
                 }>
-                    <div className='field'>
+                    <div className='field bgAzulPantone'>
                         <input type="email" id='user_email' placeholder="Email" ref={e => this.emailInputRef = e} required />
                     </div>
                     <div className='field'>

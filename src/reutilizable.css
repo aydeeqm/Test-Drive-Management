@@ -1,0 +1,26 @@
+/* Backgrounds Colores corporativos */
+.bgAzulPantone{ background-color:#18469D}
+.bgAzulEbiz{background-color:#0054FF}
+.bgCelesteEbiz{background-color:#5CC7E8}
+.bgBlanco{ background-color:#FFF}
+
+/* Backgrounds Colores Corporativos de resalte */
+.bgVerdeSubastaElectronica{background-color:#3AB54A}
+.bgRosadoProcurement{background-color:#ED105B}
+.bgNaranjaSupplyChainFinance{background-color:#F36421}
+.bgAmarilloInvoicing{background-color:#FCB825}
+.bgMoradoGestionDeContratos{background-color:#52439B}
+.bgRojoPayable{background-color:#A61836}
+
+/* Utilitarios */
+.TextoTitulo{font-weight: bold;text-transform: uppercase;}
+.text-white{color: white;}
+.a-none-decoration{text-decoration: none;}
+
+/* Shortcuts */
+.pd-0{padding: 0;}
+.pt-5{padding-top: 5%;}
+.pb-5{padding-bottom: 5%;}
+.mg-0{margin: 0;}
+.w-100{width: 100%;}
+.lh{line-height: 1.5;}

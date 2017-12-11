@@ -3,6 +3,14 @@ import createStore from 'redux-zero';
 
 const initialState = {
     data: [],
+    user: {
+        id: 1,
+        email: null,
+        fullname: null,
+        lastname:null,
+        password:null,
+    },
+    successLogin: false,
 };
 
 const store = createStore(initialState);

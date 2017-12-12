@@ -15,9 +15,7 @@ const App = ({ successLogin, data}) => {
         <Route exact path="/" component={Signin} />
         <Route path="/signin" component={Signin} />
         <Route path="/signup" component={Register} />
-        <Route path="/catalogo" component={Catalogo} />
-         {/*
-        <Route path="/details" component={DetaBoards} /> */}
+        <Route path="/catalogo" render={ () => <Catalogo data={data} successLogin={successLogin}/>} />
       </Switch>
     </HashRouter>
   )

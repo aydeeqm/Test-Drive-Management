@@ -12,9 +12,11 @@ const InitPage = ({ successLogin }) => {
                 successLogin && <Redirect to="/boards" />
             }
             <main>
-                <header className="barEstado bgAzulPantone">
+                <img className="logo"alt="logoebiz" src="img/logoblanco.png" />
+                
+                {/* <header className="barEstado bgAzulPantone">
                     <img className="logo"alt="logoebiz" src="" />
-                </header>
+                </header> */}
                 <form id='sign_in_form' onSubmit={
                     e => {
                         e.preventDefault();
@@ -26,7 +28,7 @@ const InitPage = ({ successLogin }) => {
                     <div class="col-xs-12 col-md-4 col-md-offset-4">
                         <div class="panel panel-default">
                             <div class="panel-body">
-                                <div className='form-group'>
+                                <br/><div className='form-group'>
                                     <div>
                                         <i class="fa fa-user text-AzulPantone" aria-hidden="true"></i>
                                         <label>Usuario </label>

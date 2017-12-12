@@ -1,7 +1,7 @@
 /* *{outline:1px solid red;} */
 
+body{background: url(http://cushwaketech.com/wp-content/uploads/layerslider/Creative-Agency/contact-bg-1024x683.jpg) no-repeat 50%;background-size:cover;}
 form{padding-top:100px}
-.barEstado{ height:60px;}
-.barEstado .logo{height:30px}
+.logo{width:50px;margin:20px 40px 10px}
 .panel-body i{font-size: 20px; margin-right:5px;}
 

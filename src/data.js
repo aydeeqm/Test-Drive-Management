@@ -20,11 +20,20 @@ import changan2 from './imgs/changan/changancx70.png';
 import jac1 from './imgs/jac/grands3.png';
 import jac2 from './imgs/jac/j4.png';
 
+import logo1 from './imgs/logos/Suzuki-Logo.png';
+import logo2 from './imgs/logos/mazda-logo.png';
+import logo3 from './imgs/logos/citroen-logo.png';
+import logo4 from './imgs/logos/dslogo.png';
+import logo5 from './imgs/logos/haval-logo.png';
+import logo6 from './imgs/logos/gwall.png';
+import logo7 from './imgs/logos/chalogo.png';
+import logo8 from './imgs/logos/jaclogo.png';
 
 export const cars = [
     {
         marca: 'susuki',
         id:1,
+        logo:logo1,
         modelo: [
             {
                 codigo: 'DP01',
@@ -58,6 +67,7 @@ export const cars = [
     {
         marca: 'mazda',
         id:2,
+        logo:logo2,
         modelo: [
             {
                 codigo: 'MD01',
@@ -91,6 +101,7 @@ export const cars = [
     {
         marca: 'citroen',
         id:3,
+        logo:logo3,
         modelo: [
             {
                 codigo: 'CT01',
@@ -124,6 +135,7 @@ export const cars = [
     {
         marca: 'DsAutomobiles',
         id:4,
+        logo:logo4,
         modelo: [
             {
                 codigo: 'DS01',
@@ -157,6 +169,7 @@ export const cars = [
     {
         marca: 'Haval',
         id:5,
+        logo:logo5,
         modelo: [
             {
                 codigo: 'HV01',
@@ -181,6 +194,7 @@ export const cars = [
     {
         marca: 'GreatWall',
         id:6,
+        logo:logo6,
         modelo: [
             {
                 codigo: 'GW01',
@@ -205,6 +219,7 @@ export const cars = [
     {
         marca: 'Changan',
         id:7,
+        logo:logo7,
         modelo: [
             {
                 codigo: 'HN01',
@@ -229,6 +244,7 @@ export const cars = [
     {
         marca: 'JAC',
         id:8,
+        logo:logo8,
         modelo: [
             {
                 codigo: 'JC01',

@@ -10,7 +10,7 @@ import citroen2 from '../imgs/citroen/citroencactus2.jpg';
 import citroen3 from '../imgs/citroen/citroEnlysse.png';
 import DsAutomobiles1 from '../imgs/ds/ds4crossback.png';
 import DsAutomobiles2 from '../imgs/ds/newds3.png';
-import DsAutomobiles2 from '../imgs/ds/newds5.jpg';
+import DsAutomobiles3 from '../imgs/ds/newds5.jpg';
 import haval1 from '../imgs/haval/havalh2black.jpg';
 import haval2 from '../imgs/haval/havalh6sport.jpg';
 import greadwall1 from '../imgs/greatwall/newvoleex.png';

@@ -7,7 +7,7 @@ import './Login.css';
 
 const InitPage = ({ successLogin }) => {
     return (
-        <div className='view-container sessions new'>
+        <div className='view-container sessions new body'>
             {
                 successLogin && <Redirect to="/boards" />
             }

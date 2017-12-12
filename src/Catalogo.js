@@ -1,21 +1,20 @@
 import React from 'react';
 import { connect } from 'redux-zero/react';
+import './Catalogo.css';
 
 const Product=({item,index})=>{
     return(
-        <li className="course media group" key={index}>
-         <div>
-          <h3>{item.placa}</h3>
-          <h2>{item.modelo}</h2>
-        </div>
-      </li>
+        <div className="col-lg-2  text-center" key={index}>
+          <img className="img-responsive" src={item.img}/>
+          <h5>{item.modelo}</h5>
+      </div>
     )
 }
 const Modelo=({modelo})=>{
     
      
     return(
-        <div>
+        <div className="col-lg-offset-2 cont-modelo">
             {
             modelo.map((item,index)=>{
                 return <Product key ={index} item={item} index={index}/>
@@ -36,7 +35,9 @@ class   Catalogo  extends React.Component {
       const {successLogin, data,selected } = this.props;
       let list = data.map((item,index)=>{
           return(
-              <button onClick = {(e) => this.setState ({ modelo : item.modelo} ) } >{item.marca}</button>
+              <button className="btn btn-type" onClick = {(e) => this.setState ({ modelo : item.modelo} ) } >
+              <img src={item.imglogo}/>{item.marca}
+              </button>
           )
       });
       let list2 ;
@@ -44,18 +45,20 @@ class   Catalogo  extends React.Component {
           list2 = <Modelo modelo = {this.state.modelo} />
       }
     return (
-       <div className="main-content courses">
-         <div className="course-header group">
-           <h2> Catalogo</h2> 
-
+       <div className="container-fluid text-center">
+         <div className="row">
+            <div className="container cont-catalogo">
+            <div className="col-lg-12 col-xs-12">
+            <h2 className="text-AzulPantone"> Catalogo</h2> 
+           </div>
          </div>
-         <ul>
+         <div>
               {list}
-        </ul>
-        <ul>
+        </div>
+        <div>
               {list2}
-        </ul>
-        
+        </div>
+        </div>
        </div>
     );   
  }

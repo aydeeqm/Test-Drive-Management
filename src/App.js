@@ -1,21 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css';
+import Signin from './Login';
+import Register from './Signup';
+//import Boards from './Boards';
+//import DetaBoards from './Detailsboard';
+import { HashRouter, Switch, Route } from 'react-router-dom'
+import { connect } from 'redux-zero/react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+const App = ({ successLogin, user}) => {
+  return (
+    <HashRouter>
+      <Switch>
+        <Route exact path="/" component={Signin} />
+        <Route path="/signin" component={Signin} />
+        <Route path="/signup" component={Register} />
+        {/* <Route path="/boards" component={Boards} />
+        <Route path="/details" component={DetaBoards} /> */}
+      </Switch>
+    </HashRouter>
+  )
 }
 
-export default App;
+const mapToProps = ({ successLogin, user }) => ({ successLogin, user });
+export default connect(mapToProps)(App);

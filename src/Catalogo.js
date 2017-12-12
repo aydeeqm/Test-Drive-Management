@@ -1,46 +1,67 @@
 import React from 'react';
-import { NavLink, Redirect } from 'react-router-dom';
 import { connect } from 'redux-zero/react';
+import './Catalogo.css';
 
-const ItemImg=({name, marca})=>{
+const Product=({item,index})=>{
     return(
-        <div class={"gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe"+ name}>
-            <img src="https://i2.wp.com/farm8.staticflickr.com/7110/7578234590_7a6c552f74.jpg?resize=500%2C375" className="img-responsive"/> 
-            <h2>{marca}</h2>
+        <div className="col-lg-2  text-center" key={index}>
+          <img className="img-responsive" src={item.img}/>
+          <h5>{item.modelo}</h5>
+      </div>
+    )
+}
+const Modelo=({modelo})=>{
+    
+     
+    return(
+        <div className="col-lg-offset-2 cont-modelo">
+            {
+            modelo.map((item,index)=>{
+                return <Product key ={index} item={item} index={index}/>
+            })
+            }
         </div>
     )
 }
 
-const Catalogo =({data})=>{
-    return(
-        <div class="container">
-               <div class="row">
-               <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                   <h1 class="gallery-title">CATALOGO</h1>
-               </div>
-       
-               <div align="center">
-                   {/* <button class="btn btn-default filter-button" data-filter="all">All</button> */}
-                   <button class="btn btn-default filter-button" data-filter="susuki">Susuki</button>
-                   <button class="btn btn-default filter-button" data-filter="mazda">Mazda</button>
-                   <button class="btn btn-default filter-button" data-filter="haval">Haval</button>
-                   <button class="btn btn-default filter-button" data-filter="ds autommoviles">Ds Automoviles</button>
-                   <button class="btn btn-default filter-button" data-filter="changan">Changan</button> 
-                   <button class="btn btn-default filter-button" data-filter="great wall">Great Wall</button> 
-                   <button class="btn btn-default filter-button" data-filter="citroen">Citroen</button>
-                   <button class="btn btn-default filter-button" data-filter="jac motors">Jac Motors</button>              
-               </div>
-                <div>
-                {
-                    data.map((item,index)=>{
-                    return <ItemImg key ={index} name={item.marca} marca={item.marca} index={index}/>
-                        })
-                }
-                </div>
+
+class   Catalogo  extends React.Component { 
+    constructor (props) {
+        super (props);
+        this.state  = { modelo :  null} 
+    }
+
+    render  ()   {
+      const {successLogin, data,selected } = this.props;
+      let list = data.map((item,index)=>{
+          return(
+              <button className="btn btn-type" onClick = {(e) => this.setState ({ modelo : item.modelo} ) } >
+              <img src={item.imglogo}/>{item.marca}
+              </button>
+          )
+      });
+      let list2 ;
+      if ( this.state.modelo) {
+          list2 = <Modelo modelo = {this.state.modelo} />
+      }
+    return (
+       <div className="container-fluid text-center">
+         <div className="row">
+            <div className="container cont-catalogo">
+            <div className="col-lg-12 col-xs-12">
+            <h2 className="text-AzulPantone"> Catalogo</h2> 
+           </div>
+         </div>
+         <div>
+              {list}
         </div>
-    </div>        
-    )
+        <div>
+              {list2}
+        </div>
+        </div>
+       </div>
+    );   
+ }
 }
 
-const mapToProps = ({ successLogin, data }) => ({ successLogin, data });
-export default connect(mapToProps)(Catalogo);
+export default Catalogo;

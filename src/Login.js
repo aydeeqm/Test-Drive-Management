@@ -13,7 +13,7 @@ const InitPage = ({ successLogin }) => {
             }
             <main>
                 <header className="barEstado bgAzulPantone">
-                    <div className='logo'><img alt="logoebiz" src="" /></div>
+                    <img className="logo"alt="logoebiz" src="" />
                 </header>
                 <form id='sign_in_form' onSubmit={
                     e => {
@@ -21,16 +21,34 @@ const InitPage = ({ successLogin }) => {
                         signIn(this.emailInputRef.value, this.passwordInputRef.value)
                     }
                 }>
-                    <div className='field bgAzulPantone'>
-                        <input type="email" id='user_email' placeholder="Email" ref={e => this.emailInputRef = e} required />
+                    
+                <div class="container">
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div className='form-group'>
+                                    <div>
+                                        <i class="fa fa-user text-AzulPantone" aria-hidden="true"></i>
+                                        <label>Usuario </label>
+                                    </div>
+                                    <input class="form-control" type="email" id='user_email' placeholder="Email" ref={e => this.emailInputRef = e} required />
+                                </div>
+                                <div className='form-group'>
+                                <div>
+                                        <i class="fa fa-user text-AzulPantone" aria-hidden="true"></i>
+                                        <label>Contraseña </label>
+                                    </div>
+                                    <input class="form-control" type="password" id='user_password' placeholder="Password" ref={e => this.passwordInputRef = e} required />
+                                </div><br/> 
+                                <button class="form-control" type='submit'>Ingresar</button>
+                                <div className='second_view text-right '><br/>
+                                    <NavLink className=" a-none-decoration" to={"/Signup"}>Si eres nuevo ¡crea una cuenta!  </NavLink>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className='field'>
-                        <input type="password" id='user_password' placeholder="Password" ref={e => this.passwordInputRef = e} required />
-                    </div>
-                    <button type='submit'>Sign in</button>
-                    <div className='second_view'>
-                        <NavLink to={"/Signup"}>Create new account</NavLink>
-                    </div>
+                </div>
+                    
                 </form>
             </main>
         </div>

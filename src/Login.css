@@ -1,5 +1,7 @@
 /* *{outline:1px solid red;} */
 
+form{padding-top:100px}
 .barEstado{ height:60px;}
 .barEstado .logo{height:30px}
+.panel-body i{font-size: 20px; margin-right:5px;}
 

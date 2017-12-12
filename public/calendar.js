@@ -1,7 +1,7 @@
 $(function() {
     $("#scheduler").kendoScheduler({
-        date: new Date("2017/12/10"),
-        startTime: new Date("2020/12/30 07:00 AM"),
+        date: new Date(),
+        startTime: new Date("2017/12/12 07:00 AM"),
         height: 600,
         views: [
             "day",
@@ -14,10 +14,10 @@ $(function() {
             "agenda",
             {
                 type: "timeline",
-                eventHeight: 50
+                eventHeight: 10
             }
         ],
-        timezone: "Etc/UTC",
+        timezone: "Etc/GMT+5",
         /* dataSource: {
             batch: true,
             transport: {
@@ -70,27 +70,28 @@ $(function() {
                 ]
             }
         }, */
+        
         dataSource: [
             {
                 taskId: 1,
                 ownerId: 1,
-                title: "Interview",
-                start: new Date("2017/12/10 08:00 AM"),
-                end: new Date("2017/12/10 09:00 AM"),
+                title: "",
+                start: new Date("2017/12/12 8:00 AM"),
+                end: new Date("2017/12/12 1:00 PM"),
                 description: "hackathon con mucha nota",
                 startTimezone: null,
                 endTimezone: null,
-                recurrenceRule: "FREQ=WEEKLY;BYDAY=TU,TH",
+                recurrenceRule: null,
                 recurrenceID: null,
                 recurrenceException: null,
-                isAllDay: true,
+                isAllDay: false,
             },
             {
                 taskId: 2,
-                ownerId: 2,
-                title: "Hiring Games",
-                start: new Date("2017/12/11 08:00 AM"),
-                end: new Date("2017/12/11 09:00 PM"),
+                ownerId: 1,
+                title: "",
+                start: new Date("2017/12/12 2:00 PM"),
+                end: new Date("2017/12/12 6:00 PM"),
                 description: "hackathon con mucha nota",
                 startTimezone: null,
                 endTimezone: null,
@@ -101,8 +102,22 @@ $(function() {
             },
             {
                 taskId: 3,
+                ownerId: 2,
+                title: "",
+                start: new Date("2017/12/11 08:00 AM"),
+                end: new Date("2017/12/11 09:00 AM"),
+                description: "hackathon con mucha nota",
+                startTimezone: null,
+                endTimezone: null,
+                recurrenceRule: null,
+                recurrenceID: null,
+                recurrenceException: null,
+                isAllDay: false,
+            },
+            {
+                taskId: 4,
                 ownerId: 3,
-                title: "Cumple Aydee",
+                title: "",
                 start: new Date("2017/12/16 08:00 AM"),
                 end: new Date("2017/12/16 09:00 AM"),
                 description: "front end developer",
@@ -119,9 +134,11 @@ $(function() {
                 field: "ownerId",
                 title: "Owner",
                 dataSource: [
-                    { text: "Alex", value: 1, color: "#f8a398" },
-                    { text: "Bob", value: 2, color: "#51a0ed" },
-                    { text: "Charlie", value: 3, color: "#56ca85" }
+                    { text: "Solicitud", value: 1, color: "#3fb5e4" },
+                    { text: "Programado", value: 2, color: "#e6262f" },
+                    { text: "Disponible-part", value: 3, color: "#f0bd17" },
+                    { text: "Disponible-day", value: 4, color: "#04970b" },
+                    { text: "Comprometido", value: 5, color: "#282e28" }
                 ]
             }
         ]

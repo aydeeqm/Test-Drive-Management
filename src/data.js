@@ -23,9 +23,10 @@ import jac2 from './imgs/JAC/j4.png';
 export const cars = [
     {
         marca: 'susuki',
+        id:1,
         modelo: [
             {
-                id: 'DP01',
+                codigo: 'DP01',
                 modelo: 'Grand Nomade 2.4 At 4x4 Lux',
                 color: ['Bronce Bizonte','Verde Metálico'],
                 fabricación: '2017',
@@ -34,7 +35,7 @@ export const cars = [
                 img:susuki2,
             },
             {
-                id: 'DP02',
+                codigo: 'DP02',
                 modelo: 'New Vitara GLX Lux 6AT 4WD VVT',
                 color: ['Plata', 'Azul Turquesa'],
                 fabricación: '2017',
@@ -46,9 +47,10 @@ export const cars = [
     },
     {
         marca: 'mazda',
+        id:2,
         modelo: [
             {
-                id: 'MD01',
+                codigo: 'MD01',
                 modelo: 'Mazda CX5 MT 2.0 2WD 65 Core new',
                 color: ['Gris metálico','Blanco'],
                 fabricación: '2017',
@@ -57,7 +59,7 @@ export const cars = [
                 img:mazda2,
             },
             {
-                id: 'MD02',
+                codigo: 'MD02',
                 modelo: 'Mazda MX-5 At 2.0 65 High RF',
                 color: ['Negro', 'Rojo'],
                 fabricación: '2017',
@@ -69,9 +71,10 @@ export const cars = [
     },
     {
         marca: 'citroen',
+        id:3,
         modelo: [
             {
-                id: 'CT01',
+                codigo: 'CT01',
                 modelo: 'Citroen C4 1.6 VTI 120HP BVMS FEEL',
                 color: ['blanco','negro'],
                 fabricación: '2017',
@@ -80,7 +83,7 @@ export const cars = [
                 img:citroen1,
             },
             {
-                id: 'CT02',
+                codigo: 'CT02',
                 modelo: 'Citroen C4 Cactus 1.2 pure tech 82 BVM Feel',
                 color: ['negro','gold'],
                 fabricación: '2017',
@@ -92,9 +95,10 @@ export const cars = [
     },
     {
         marca: 'DsAutomobiles',
+        id:4,
         modelo: [
             {
-                id: 'DS01',
+                codigo: 'DS01',
                 modelo: 'DS4 Crossback',
                 color: ['Pearl White', 'Ink Blue'],
                 fabricación: '2017',
@@ -103,7 +107,7 @@ export const cars = [
                 img:DsAutomobiles1,
             },
             {
-                id: 'DS02',
+                codigo: 'DS02',
                 modelo: 'New DS5',
                 color: ['Ink Blue','latinium Grey'],
                 fabricación: '2017',
@@ -115,9 +119,10 @@ export const cars = [
     },
     {
         marca: 'Haval',
+        id:5,
         modelo: [
             {
-                id: 'HV01',
+                codigo: 'HV01',
                 modelo: 'Haval H2 MTR GW4G15B',
                 color: ['Negro','Marfil'],
                 fabricación: '2016',
@@ -126,7 +131,7 @@ export const cars = [
                 img:haval1,
             },
             {
-                id: 'HV02',
+                codigo: 'HV02',
                 modelo: 'Haval H6 Sport',
                 color: ['gray','rojo','negro'],
                 fabricación:'2016',
@@ -138,9 +143,10 @@ export const cars = [
     },
     {
         marca: 'GreatWall',
+        id:6,
         modelo: [
             {
-                id: 'GW01',
+                codigo: 'GW01',
                 modelo: 'New Voleex C30 1.5 5MT Fashionable',
                 color: ['blanco','gray','rojo'],
                 fabricación: '2016',
@@ -149,7 +155,7 @@ export const cars = [
                 img:greadwall1
             },
             {
-                id: 'GW02',
+                codigo: 'GW02',
                 modelo: 'Wingle 5 Upgrade 2.8 TDI 6MT 4x4 Lux CD',
                 color: ['gray','rojo'],
                 fabricación:'2016',
@@ -161,9 +167,10 @@ export const cars = [
     },
     {
         marca: 'Changan',
+        id:7,
         modelo: [
             {
-                id: 'HN01',
+                codigo: 'HN01',
                 modelo: 'Changan CX70',
                 color: ['plata','rojo','verde'],
                 fabricación: '2016',
@@ -172,7 +179,7 @@ export const cars = [
                 img:changan2,
             },
             {
-                id: 'HN02',
+                codigo: 'HN02',
                 modelo: 'Changan CS15',
                 color: ['naranja','azul','negro'],
                 fabricación:'2016',
@@ -184,9 +191,10 @@ export const cars = [
     },
     {
         marca: 'JAC',
+        id:8,
         modelo: [
             {
-                id: 'JC01',
+                codigo: 'JC01',
                 modelo: 'GRAND S3',
                 color: ['plomo', 'rojo','negro'],
                 fabricación: '2017',
@@ -195,7 +203,7 @@ export const cars = [
                 img:jac1,
             },
             {
-                id: 'JC02',
+                codigo: 'JC02',
                 modelo: 'J4 ',
                 color: ['gris','negro','blanco'],
                 fabricación:'2014',

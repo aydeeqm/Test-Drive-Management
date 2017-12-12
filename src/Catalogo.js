@@ -59,7 +59,7 @@ class   Catalogo  extends React.Component {
          <div className="container">
               {list}
         </div>
-        <div className="container">
+        <div className="container carslist">
               {list2}
         </div>
         </div>

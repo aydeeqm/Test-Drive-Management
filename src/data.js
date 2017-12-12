@@ -2,21 +2,12 @@ import createStore from 'redux-zero';
 import susuki1 from './imgs/susuki/newvitara.png';
 import susuki2 from './imgs/susuki/nomade.png';
 import susuki3 from './imgs/susuki/s-cross.png';
-<<<<<<< HEAD
-import mazda1 from './imgs/mazda/mazda3sport.png';
-import mazda2 from './imgs/mazda/mazdacx5.png';
-import mazda3 from './imgs/mazda/mazdamx5rf.png';
-import citroen1 from './imgs/citroen/citroen1.png';
-import citroen2 from './imgs/citroen/citroencactus2.jpg';
-import citroen3 from './imgs/citroen/citroEnlysse.png';
-=======
 import mazda1 from './imgs/mazda/mazda3sport.jpg';
 import mazda2 from './imgs/mazda/mazdacx5.JPG';
 import mazda3 from './imgs/mazda/mazdamx5rf.jpg';
 import citroen1 from './imgs/citroen/citroen1.png';
 import citroen2 from './imgs/citroen/citroencactus2.jpg';
 import citroen3 from './imgs/citroen/citroEnlysse3.png';
->>>>>>> 7034f63268d4fa1c5973e1012e3b63ba0bfb7cbc
 import DsAutomobiles1 from './imgs/ds/ds4crossback.png';
 import DsAutomobiles2 from './imgs/ds/newds3.png';
 import DsAutomobiles3 from './imgs/ds/newds5.jpg';
@@ -26,13 +17,9 @@ import greadwall1 from './imgs/greatwall/newvoleex.png';
 import greadwall2 from './imgs/greatwall/wingle5.png';
 import changan1 from './imgs/changan/changancs15.jpg';
 import changan2 from './imgs/changan/changancx70.png';
-<<<<<<< HEAD
 import jac1 from './imgs/jac/grands3.png';
 import jac2 from './imgs/jac/j4.png';
-=======
-import jac1 from './imgs/JAC/grands3.png';
-import jac2 from './imgs/JAC/j4.png';
->>>>>>> 7034f63268d4fa1c5973e1012e3b63ba0bfb7cbc
+
 
 export const cars = [
     {
@@ -55,8 +42,7 @@ export const cars = [
                 fabricación: '2017',
                 serie:'TSMYE21SXJM346794',
                 placa: 'AXZ074',
-<<<<<<< HEAD
-                img:{susuki1},
+                img:susuki1,
             },
             {
                 codigo: 'DP03',
@@ -65,10 +51,7 @@ export const cars = [
                 fabricación: '2016',
                 serie:'TSMYE21SXJM7867',
                 placa: 'AXZ008',
-                img:{susuki3},
-=======
-                img:susuki1,
->>>>>>> 7034f63268d4fa1c5973e1012e3b63ba0bfb7cbc
+                img:susuki3,
             }
         ]
     },
@@ -92,8 +75,7 @@ export const cars = [
                 fabricación: '2017',
                 serie:'MTCX56ASDF564345',
                 placa: 'TMX456',
-<<<<<<< HEAD
-                img:{susuki3},
+                img:mazda1,
             },
             {
                 codigo: 'MD03',
@@ -102,10 +84,7 @@ export const cars = [
                 fabricación: '2017',
                 serie:'MTCX56ASDF3457',
                 placa: 'TMX600',
-                img:{susuki3},
-=======
-                img:mazda1,
->>>>>>> 7034f63268d4fa1c5973e1012e3b63ba0bfb7cbc
+                img:mazda3,
             }
         ]
     },
@@ -129,8 +108,7 @@ export const cars = [
                 fabricación: '2017',
                 serie:'CTRP45sdfg462367',
                 placa: 'CTS456',
-<<<<<<< HEAD
-                img:{citroen2},
+                img:citroen2,
             },
             {
                 codigo: 'CT03',
@@ -139,10 +117,7 @@ export const cars = [
                 fabricación: '2017',
                 serie:'CTRP45sdfg46789',
                 placa: 'CTS050',
-                img:{citroen3},
-=======
-                img:citroen2,
->>>>>>> 7034f63268d4fa1c5973e1012e3b63ba0bfb7cbc
+                img:citroen3,
             }
         ]
     },
@@ -166,19 +141,16 @@ export const cars = [
                 fabricación: '2017',
                 serie:'DSAU45G4535',
                 placa: 'ASD064',
-<<<<<<< HEAD
-                img:{DsAutomobiles2},
-            },{
+                img:DsAutomobiles2,
+            },
+            {
                 codigo: 'DS03',
                 modelo: 'New DS5',
                 color: ['Ink Blue','latinium Grey'],
                 fabricación: '2017',
                 serie:'DSAU45G8765',
                 placa: 'ASD078',
-                img:{DsAutomobiles3},
-=======
-                img:DsAutomobiles2,
->>>>>>> 7034f63268d4fa1c5973e1012e3b63ba0bfb7cbc
+                img:DsAutomobiles3,
             }
         ]
     },

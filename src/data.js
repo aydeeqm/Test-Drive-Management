@@ -140,7 +140,7 @@ export const cars = [
         marca: 'GreatWall',
         modelo: [
             {
-                id: 'FGW01',
+                id: 'GW01',
                 modelo: 'New Voleex C30 1.5 5MT Fashionable',
                 color: ['blanco','gray','rojo'],
                 fabricación: '2016',
@@ -149,7 +149,7 @@ export const cars = [
                 img:{greadwall1},
             },
             {
-                id: 'FGW02',
+                id: 'GW02',
                 modelo: 'Wingle 5 Upgrade 2.8 TDI 6MT 4x4 Lux CD',
                 color: ['gray','rojo'],
                 fabricación:'2016',
@@ -163,7 +163,7 @@ export const cars = [
         marca: 'Changan',
         modelo: [
             {
-                id: 'CHN01',
+                id: 'HN01',
                 modelo: 'Changan CX70',
                 color: ['plata','rojo','verde'],
                 fabricación: '2016',
@@ -172,7 +172,7 @@ export const cars = [
                 img:{changan2},
             },
             {
-                id: 'CHN02',
+                id: 'HN02',
                 modelo: 'Changan CS15',
                 color: ['naranja','azul','negro'],
                 fabricación:'2016',
@@ -186,7 +186,7 @@ export const cars = [
         marca: 'JAC',
         modelo: [
             {
-                id: 'JAC01',
+                id: 'JC01',
                 modelo: 'GRAND S3',
                 color: ['plomo', 'rojo','negro'],
                 fabricación: '2017',
@@ -195,7 +195,7 @@ export const cars = [
                 img:{jac1},
             },
             {
-                id: 'JAC02',
+                id: 'JC02',
                 modelo: 'J4 ',
                 color: ['gris','negro','blanco'],
                 fabricación:'2014',

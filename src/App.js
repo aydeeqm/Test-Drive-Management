@@ -5,6 +5,7 @@ import Register from './Signup';
 import Catalogo from './Catalogo'
 //import Boards from './Boards';
 //import DetaBoards from './Detailsboard';
+import Register from './FinalReserva';
 import { HashRouter, Switch, Route } from 'react-router-dom'
 import { connect } from 'redux-zero/react';
 
@@ -16,6 +17,8 @@ const App = ({ successLogin, data}) => {
         <Route path="/signin" component={Signin} />
         <Route path="/signup" component={Register} />
         <Route path="/catalogo" render={ () => <Catalogo data={data} successLogin={successLogin}/>} />
+        <Route path="/FinalReserva" component={Register} />
+        
       </Switch>
     </HashRouter>
   )

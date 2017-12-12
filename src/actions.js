@@ -63,3 +63,30 @@ export function signIn(user, pass) {
 //         idBoard: index
 //     })
 // }
+
+
+// var reservaactualA = window.sessionStorage.getItem('ReservaActual');
+// export function FinalReserva() {
+
+//     auth.createUserWithEmailAndPassword(email, pass).then(user => {
+//         let newuser = {
+//             fullname, lastname, email, pass
+//         }
+//         database.ref('users/' + user.uid).set(newuser);
+//         database.ref('users/' + user.uid).once('value').then(res => {
+//             const fullUserInfo = res.val();
+//             console.log('full info ', fullUserInfo);
+//             store.setState({
+//                 user: {
+//                     id: user.uid,
+//                     email: fullUserInfo.email,
+//                     fullname: fullUserInfo.fullname,
+//                     lastname: fullUserInfo.lastname,
+//                     password: fullUserInfo.password,
+//                 }
+//             })
+//         })
+
+//     })
+
+// }

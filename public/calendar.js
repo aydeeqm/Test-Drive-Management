@@ -5,17 +5,12 @@ $(function() {
         height: 600,
         views: [
             "day",
-            "workWeek",
             "week",
              {
                  type: "month",
                  selected: true
              },
             "agenda",
-            {
-                type: "timeline",
-                eventHeight: 10
-            }
         ],
         timezone: "Etc/GMT+5",
         /* dataSource: {
@@ -132,7 +127,7 @@ $(function() {
         resources: [
             {
                 field: "ownerId",
-                title: "Owner",
+                title: "Disposición",
                 dataSource: [
                     { text: "Solicitud", value: 1, color: "#3fb5e4" },
                     { text: "Programado", value: 2, color: "#e6262f" },
@@ -158,3 +153,32 @@ $(function() {
         });
     });
 });
+
+function some(){
+    var model = $("#scheduler").data("kendoScheduler").data();
+    console.log(model)
+    
+}
+var reservasGenerale=null;
+$(document).ready(function(){
+    
+    $('#ConfirmarReserva').click(function(){
+         reservasGenerale = $("#scheduler").data("kendoScheduler").data();
+        sessionStorage.setItem('ReservaActual', reservasGenerale);
+        location.href = "#FinalReserva";
+    });
+    $('#CargarReserva').click(function () {
+         reservasGenerale = sessionStorage.getItem('ReservaActual');
+        console.log(reservasGenerale)
+    });
+
+});
+
+function saveReserva(){
+    var model = $("#scheduler").data("kendoScheduler").data();
+    sessionStorage.setItem('ReservaActual',model);
+}
+function obtenerReservasGuardadas() {
+    var model = sessionStorage.getItem('ReservaActual');
+    console.log(model)
+}

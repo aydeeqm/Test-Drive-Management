@@ -14,6 +14,7 @@ const Modelo=({modelo})=>{
     
      
     return(
+        
         <div className="col-lg-offset-2 cont-modelo">
             {
             modelo.map((item,index)=>{
@@ -36,7 +37,7 @@ class   Catalogo  extends React.Component {
       let list = data.map((item,index)=>{
           return(
               <button className="btn btn-type" onClick = {(e) => this.setState ({ modelo : item.modelo} ) } >
-              <img src={item.imglogo}/>{item.marca}
+                <img className="marcaLogo"  src={item.logo} key={index}/>
               </button>
           )
       });
@@ -46,16 +47,19 @@ class   Catalogo  extends React.Component {
       }
     return (
        <div className="container-fluid text-center">
+        <div className="headercatalogo">
+             <img className="logoebiz" alt="logoebiz" src="./img/logoblanco.png" />
+        </div>    
          <div className="row">
             <div className="container cont-catalogo">
             <div className="col-lg-12 col-xs-12">
-            <h2 className="text-AzulPantone"> Catalogo</h2> 
+            <h2 className="text-AzulPantone">Seleccione una Marca</h2> 
            </div>
          </div>
-         <div>
+         <div className="container">
               {list}
         </div>
-        <div>
+        <div className="container">
               {list2}
         </div>
         </div>

@@ -2,11 +2,11 @@ import store from './store';
 import firebase from "./Firebase";
 import { auth, database } from './Firebase';
 
-export function signUp(fullname, lastname, email, pass) {
+export function signUp(fullname, lastname,fechaNacimiento,genero, email, pass) {
 
     auth.createUserWithEmailAndPassword(email, pass).then(user => {
         let newuser = {
-            fullname, lastname, email, pass
+            fullname, lastname, fechaNacimiento,genero,email, pass
         }
         database.ref('users/' + user.uid).set(newuser);
         database.ref('users/' + user.uid).once('value').then(res => {
@@ -16,6 +16,8 @@ export function signUp(fullname, lastname, email, pass) {
                 user: {
                     id: user.uid,
                     email: fullUserInfo.email,
+                    fechaNacimiento:fullUserInfo.fechaNacimiento,
+                    genero:fullUserInfo.genero,
                     fullname: fullUserInfo.fullname,
                     lastname: fullUserInfo.lastname,
                     password: fullUserInfo.password,

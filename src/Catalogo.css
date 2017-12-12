@@ -1,0 +1,33 @@
+.cont-modelo{
+    width: 100%;
+    height: 30vh;
+    margin-top:10%; 
+}
+.btn-type{
+    margin: 5px;
+}
+.headercatalogo{
+    background: url(http://cushwaketech.com/wp-content/uploads/layerslider/Creative-Agency/contact-bg-1024x683.jpg) no-repeat 100%; 
+    background-size:cover;
+    height: 100px;
+    }
+
+.logoebiz{
+    width: 5%;
+    float: left;
+    margin:20px 40px 10px;
+}
+.text-AzulPantone{
+    text-align: left;
+    font-weight: bold;
+}
+.marcaLogo{
+    width: 50%;
+}
+.btn-type{
+    background: #fff;
+    border: 1px solid rgb(196, 190, 190);
+}
+button:hover{
+    background: #18469D,
+}

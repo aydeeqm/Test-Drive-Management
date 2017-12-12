@@ -1,8 +1,10 @@
 import createStore from 'redux-zero';
+import {cars} from './data';
 /* import { tboard } from './Databoards' */
 
 const initialState = {
-    data: [],
+    data: cars,
+    selected : 0,
     user: {
         id: 1,
         email: null,

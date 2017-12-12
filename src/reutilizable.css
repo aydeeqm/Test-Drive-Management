@@ -16,10 +16,12 @@
 .TextoTitulo{font-weight: bold;text-transform: uppercase;}
 .text-white{color: white;}
 .a-none-decoration{text-decoration: none;}
+.text-AzulPantone{color:#18469D}
 
 /* Shortcuts */
 .pd-0{padding: 0;}
 .pt-5{padding-top: 5%;}
+.pt-10{padding-top: 10%;}
 .pb-5{padding-bottom: 5%;}
 .mg-0{margin: 0;}
 .w-100{width: 100%;}
